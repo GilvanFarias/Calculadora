@@ -9,11 +9,11 @@ namespace Calculadora
         static void Main(string[] args)
         {
             
-            int res = 0;
+            double res = 0;
             string operador;
 
             Console.Write("Digite um valor inteiro: ");
-            int valor1 = int.Parse(Console.ReadLine());
+            double valor1 = double.Parse(Console.ReadLine());
 
             Console.Write("Digite um operador: ");
             operador = Console.ReadLine();
@@ -24,21 +24,21 @@ namespace Calculadora
                 //multiplicar
                 if(operador == "*"){
                     Console.Write("Digite um valor inteiro: ");
-                    int valor2 = int.Parse(Console.ReadLine());
+                    double valor2 = double.Parse(Console.ReadLine());
                     res = valor1 * valor2;
                     Console.Write("Resultado de: "+valor1 + " * " +valor2+ " = " + res);
                 //dividir
                 }if(operador == "/"){
 
                     Console.Write("Digite um valor inteiro: ");
-                    int valor2 = int.Parse(Console.ReadLine());
+                    double valor2 = double.Parse(Console.ReadLine());
                     res = valor1 / valor2;
                     Console.Write("Resultado de: "+valor1 + " / " +valor2+ " = " + res);
                 //somar
                 }if(operador == "+"){
 
                     Console.Write("Digite um valor inteiro: ");
-                    int valor2 = int.Parse(Console.ReadLine());
+                    double valor2 = double.Parse(Console.ReadLine());
                     res = valor1 + valor2;
                     Console.Write("Resultado de: "+valor1 + " + " +valor2+ " = " + res);
 
@@ -46,7 +46,7 @@ namespace Calculadora
                 }if(operador == "-"){
 
                     Console.Write("Digite um valor inteiro: ");
-                    int valor2 = int.Parse(Console.ReadLine());
+                    double valor2 = double.Parse(Console.ReadLine());
                     res = valor1 - valor2;
                     Console.Write("Resultado de: "+valor1 + " - " +valor2+ " = " + res);
                 }
